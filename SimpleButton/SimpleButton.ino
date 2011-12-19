@@ -5,10 +5,12 @@
  */
 
 int pinRead = 4;
-int pinOut = 4;
+int pinOut = 13;
 
 void setup()
 {
+  Serial.begin(9600);
+  
   // initialize the digitals pins one as an output and other as input
   pinMode(pinRead, INPUT);
   pinMode(pinOut, OUTPUT);
